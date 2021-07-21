@@ -34,6 +34,7 @@ namespace Microsoft.MixedReality.Toolkit
         private Transform containerObject = null;
 
         private Vector3 contentPosition = Vector3.zero;
+        private Quaternion contentOrientation = Quaternion.identity;
         private const uint MaxEditorFrameWaitCount = 15;
         private Coroutine initializeSceneContentWithDelay;
 
@@ -134,6 +135,23 @@ namespace Microsoft.MixedReality.Toolkit
             }
 
             contentInitialized = true;
+        }
+
+        /// <summary>
+        /// Reorients the scene content based on the camera direction
+        /// </summary>
+        public void ReorientContent()
+        {
+            contentPosition.x = CameraCache.Main.transform.localPosition.x;
+            contentPosition.y = CameraCache.Main.transform.localPosition.y;
+            contentPosition.z = CameraCache.Main.transform.localPosition.z;
+//            contentPosition.z = CameraCache.Main.transform.localPosition.z + 0.5f;
+
+            contentOrientation.y = CameraCache.Main.transform.rotation.y;
+            contentOrientation.w = CameraCache.Main.transform.rotation.w;
+
+            containerObject.localPosition = contentPosition;
+            containerObject.localRotation = contentOrientation;
         }
     }
 }
