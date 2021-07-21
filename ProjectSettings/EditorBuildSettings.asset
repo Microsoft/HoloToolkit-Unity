@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity
     guid: 3dd4a396b5225f8469b9a1eb608bfa57
   m_configObjects:
-    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: e0a6da15c9d4bf2499d9c227d90bd8e7,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: df272d4e79a849b43882cbcab0e7d681,
+      type: 2}
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 6b53ef77bf6929a489f9db3d2aa94093,
+      type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 00ee5d9f5b028ea4c9328928d4b92a92,
       type: 2}
     com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: e62a87a58e0855440bf3675f4e3eac18,
       type: 2}
     com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: d96734d10d0040248bbb79519bb034b7,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 68d3f4682465e9244a94c51343bb7c4c,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c56bfdcf5c850a246a31dfc330710d10,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 253ed06b0d48f2e4793c1afb7ae72f5f,
       type: 2}

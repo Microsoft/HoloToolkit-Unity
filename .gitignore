@@ -19,8 +19,6 @@ project.json
 project.lock.json
 *.package
 **/.DS_Store
-Assets/XR/
-Assets/XR.meta
 Assets/Oculus/
 Assets/Oculus.meta
 
