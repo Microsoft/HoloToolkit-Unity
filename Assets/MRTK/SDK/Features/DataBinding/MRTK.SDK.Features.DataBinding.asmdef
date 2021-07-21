@@ -1,0 +1,15 @@
+{
+    "name": "MRTK.SDK.Features.DataBinding",
+    "references": [
+        "Unity.TextMeshPro",
+        "Microsoft.MixedReality.Toolkit"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
